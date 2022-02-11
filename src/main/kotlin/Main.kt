@@ -1,3 +1,5 @@
+import javax.print.attribute.IntegerSyntax
+
 //TODO INSTRUCTIONS:
 //  1. Now that you have the code in IntelliJ on your computer, use VCS to "Share this project to your GitHub repo
 //     that is attached to your student email.  MAKE SURE YOU HAVE THIS REPO SET TO PRIVATE.
@@ -52,6 +54,9 @@ fun inferredTypeOf(variable: Any){
     // When the type is Int, print out that the data type of the variable is Int.
     //    Adopt the same approach for the following types: Long, Double, Float or Boolean.
     // When the data type is not Int, Long, Double, Float or Boolean, print that the data type is something else.
+
+
+
 }
 
 fun stringContains(str : String){
@@ -61,4 +66,20 @@ fun stringContains(str : String){
     //    - contains the letter C, print the string and say it contains C.
     //    - is empty, inform the user that it is empty.
     //    - otherwise print the string and say it doesn't contain A, B or C.
+    if (str.contains('A')||str.contains('a')){
+        println("The String contains the letter A")
+    }
+
+     if (str.contains('B')||str.contains('b')){
+        println("The String contains the letter B")
+    }
+     if (str.contains('C')||str.contains('c')){
+        println("The String contains the letter C")
+    }
+    else if (str.isEmpty()){
+        println("The String is empty")
+    }
+    else{
+        println("The string does not contain A B or C")
+    }
 }
