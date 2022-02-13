@@ -54,6 +54,23 @@ fun inferredTypeOf(variable: Any){
     // When the type is Int, print out that the data type of the variable is Int.
     //    Adopt the same approach for the following types: Long, Double, Float or Boolean.
     // When the data type is not Int, Long, Double, Float or Boolean, print that the data type is something else.
+    if (variable is Float){
+        println("$variable is float")
+
+    }
+    else if(variable is Int){
+        println("$variable is int")
+    }
+    else if(variable is Double){
+        println("$variable is double")
+    }
+    else if(variable is Long){
+        println("$variable is long")
+    }
+    else{
+        println("its none of these")
+    }
+
 
 
 
